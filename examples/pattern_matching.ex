@@ -1,5 +1,4 @@
-# Normally, each of these modules would be in their own file
-
+# Normally, each of these three modules (declared with defmodule) would be in a separate file
 defmodule MyAppWeb.ShopController do
   #   alias aliases a module so we don't have to type the entire
   # module address, ie: aliasing, we can just do StripeHelpers.some_function()
