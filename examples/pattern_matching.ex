@@ -9,7 +9,7 @@ defmodule MyAppWeb.ShopController do
   # instead of MyAppWeb.StripeHelpers.some_function()
 
   def charge_and_ship(user, billing_params) do
-    # pattern match variables off of user + billing_params in lines 14 & 16
+    # pattern match variables off of user + billing_params in next two statements
     %{id: user_id, shipping_address: shipping_address} = user
 
     %{"product" => product, "charge_amount" => amount_to_charge, "recipient" => charge_recipient, "source" => payment_source, "address_billing" => billing_address} = billing_params
