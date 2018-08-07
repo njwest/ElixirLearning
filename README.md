@@ -7,8 +7,7 @@
 2. [Install Phoenix](https://phoenixframework.org/)
 3. [Install NodeJS (macOS homebrew instructions)](https://www.dyclassroom.com/howto-mac/how-to-install-nodejs-and-npm-on-mac-using-homebrew)
 4. [Install PostgreSQL](https://www.postgresql.org/download/)
-5. Install PostgreSQL GUI
-  * [Postico for macOS is really good](https://eggerapps.at/postico/)
+5. Install PostgreSQL GUI -- [Postico for macOS is really good](https://eggerapps.at/postico/)
 
 I recommend using **Homebrew** to install Elixir/Erlang/Node if you are on macOS
 
