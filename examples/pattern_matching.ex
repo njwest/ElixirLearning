@@ -1,13 +1,13 @@
 # Normally, each of these three modules (declared with defmodule) would be in a separate file
 defmodule MyAppWeb.ShopController do
-  #   alias aliases a module so we don't have to type the entire
-  # module address, ie: aliasing, we can just do StripeHelpers.some_function()
-  # instead of MyAppWeb.StripeHelpers.some_function()
   alias MyAppWeb.StripeHelpers
   alias MyAppWeb.ShippingController
   # The above can also be written as alias MyAppWeb.{StripeHelpers, ShippingController}
 
-  # charge_and_ship is a function within the MyAppWeb.ShopController module
+  # NOTE `alias` aliases a module so we don't have to type the entire
+  # module address, ie: aliasing, we can just do StripeHelpers.some_function()
+  # instead of MyAppWeb.StripeHelpers.some_function()
+
   def charge_and_ship(user, billing_params) do
     # pattern match variables off of user + billing_params in lines 14 & 16
     %{id: user_id, shipping_address: shipping_address} = user
@@ -46,6 +46,7 @@ defmodule MyAppWeb.StripeHelpers do
     # Some logic to charge the user via the map passed through as (params)
     # return {:ok, response} and {:error, reason} or some variation
   end
+
 end
 
 
