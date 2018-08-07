@@ -52,6 +52,18 @@ end
 
 defmodule MyAppWeb.ShippingController do
 
+  def ship_to_user(gift_wrap_params, shipping_params) do
+    # If ship_to_user() is called with two arguments, it will pattern match
+    # to this function, that has two arguments.
+    # Since ship_to_user is called in the first module with only one argument,
+    # it will pattern match to ship_to_user() with one argument defined, as below.
+
+    # NOTE in Elixir syntax, function arity is described with /1, /2, /0, etc,
+    # where the number in /number is the number of args that go into the func.
+    # The func this comment is in would be referred to as ships_to_user()/2,
+    # the func below would be referred to as ships_to_user()/1
+  end
+
   def ship_to_user(shipping_params) do
     # Some logic to ship an item to a customer
     # return {:ok, response} and {:error, reason} or some variation
